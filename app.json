@@ -1,0 +1,85 @@
+{
+  "name": "TG File Share/Sharing Bot",
+  "description": "file sharing bot store posts and it can access by special links",
+  "keywords": [
+    "telegram",
+    "file",
+    "sharing"
+  ],
+  "repository": "https://github.com/narutooxox/RolexTG",
+  "logo": "https://ibb.co/7C1Fkst",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Your Bot token, Get it from @Botfather",
+      "required": false
+    },
+    "OWNER_ID": {
+      "description": "An integer of consisting of your owner ID",
+      "required": false
+    },
+    "APP_ID":{
+      "description": "your app id, take it from my.telegram.org",
+      "required": false
+    },
+    "DATABASE_URL": {
+      "description": "Paste your mongo db url",
+      "required": false
+    },
+    "DATABASE_NAME":{
+      "description": "Enter your DATABASE_NAME ",
+      "value": "filesharexbot"
+    },
+    "API_HASH":{
+      "description": "your api hash, take it from my.telegram.org",
+      "required": false
+    },
+    "CHANNEL_ID":{
+      "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
+      "required": false
+    },
+    "FORCE_SUB_CHANNEL":{
+      "description": "id of the channel or group, if you want enable force sub feature else put 0",
+      "required": false
+    },
+    "START_MESSAGE": {
+      "description": "Optional: start message of bot, use HTML parsemode format",
+      "required": false
+    },
+    "FORCE_SUB_MESSAGE": {
+      "description": "Optional: Force Sub message of bot, use HTML parsemode format",
+      "required": false
+    },
+    "ADMINS": {
+      "description": "A space separated list of user_ids of Admins, they can only create links",
+      "value": "",
+      "required": false
+    },
+    "SHORTENER_WEBSITE": {
+      "description": "SHORTENER WEBSITE Name",
+      "value": "",
+      "required": false
+    },
+    "SHORTENER_API": {
+      "description": "SHORTENER WEBSITE Oda Api",
+      "value": "",
+      "required": false
+    },
+    "PROTECT_CONTENT": {
+      "description": "Protect contents from getting forwarded",
+      "value": "False",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
+
