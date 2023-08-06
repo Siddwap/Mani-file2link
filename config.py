@@ -32,7 +32,7 @@ SHORTENER_WEBSITE = os.environ.get('SHORTENER_WEBSITE', 'tnshort.net')
 SHORTENER_API = os.environ.get('SHORTENER_API', 'a99608641893c27e95a317a55d13112c9833cae7')
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://karthickjk:karthick@cluster0.vcjskkq.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "mona)
+DB_NAME = os.environ.get("DATABASE_NAME", "mona")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001856308530"))
