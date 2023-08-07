@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6216796862:AAEzPKNRdhnpdGfCoGmwHchBDGwxuZT2p1Q")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6145150148:AAH_0wuBw4g8I5WVtQro25eGY3Za-ucKQQo")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "9321645"))
@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "9321645"))
 API_HASH = os.environ.get("API_HASH", "6a1b5084e59012093525c2443880a09a")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001840703856"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001986537138"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5296610774"))
@@ -32,10 +32,10 @@ SHORTENER_WEBSITE = os.environ.get('SHORTENER_WEBSITE', 'tnshort.net')
 SHORTENER_API = os.environ.get('SHORTENER_API', 'a99608641893c27e95a317a55d13112c9833cae7')
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://karthickjk:karthick@cluster0.vcjskkq.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "mona")
+DB_NAME = os.environ.get("DATABASE_NAME", "mani")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001856308530"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001908407689"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -43,7 +43,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hᴇʟʟᴏ {first}🦋 ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ Fɪʟᴇ ᴛᴏ ʟɪɴᴋ + ꜰɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ⚡️</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5296610774 1232844084").split()):
+    for x in (os.environ.get("ADMINS", "5296610774 1232844084 5433277341").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
