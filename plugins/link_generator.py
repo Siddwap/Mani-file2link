@@ -38,7 +38,7 @@ async def batch(client: Client, message: Message):
     base64_string = await encode(string)
     link = f"https://t.me/{client.username}?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("💸 Yᴏᴜ ᴄᴀɴ sʜᴀʀᴇ ᴛʜɪs ᴛᴏ ᴀɴʏ ᴄʜᴀᴛs 💸", url=f'https://telegram.me/share/url?url={link}')]])
-    await second_message.reply_text(f"<b>ʏᴏᴜʀ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ❗️</b>\n\n<b>💎 ғɪʟᴇ ɴᴀᴍᴇ : </b> \n\n<b>💫 ғɪʟᴇ sɪᴢᴇ : </b>\n\n<b>🦋 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ : </b><i><b>{link}</b></i>\n\n<i>© @Monaserials</i>", quote=True, reply_markup=reply_markup)
+    await second_message.reply_text(f"<b>ʏᴏᴜʀ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ❗️</b>\n\n<b>🦋 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ : </b><i><b>{link}</b></i>", quote=True, reply_markup=reply_markup)
 
 async def get_shortlink(link):
     url = 'https://tnshort.net/api'
