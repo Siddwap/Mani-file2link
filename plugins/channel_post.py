@@ -14,8 +14,8 @@ from shortzy import Shortzy
 async def channel_post(client: Client, message: Message):
     reply_text = await message.reply_text("Please Wait...!", quote = True)
     try:
-        post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
-        post_message_1 = await message.copy(chat_id = -1002035056533, disable_notification=True)
+        post_message = await message.copy(chat_id=client.db_channel.id, disable_notification=True)
+        post_message_1 = await message.copy(chat_id=-1002035056533, disable_notification=True)
     except FloodWait as e:
         await asyncio.sleep(e.x)
         post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
