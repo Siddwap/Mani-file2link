@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7237044615:AAH3MVAuMc5u7HrMVQSuCPnz7e3SeSAzwSc")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7231799029:AAGvntdjgdELkWYJdBLR2WBg4cvlMQvR-WI")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "9321645"))
@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "9321645"))
 API_HASH = os.environ.get("API_HASH", "6a1b5084e59012093525c2443880a09a")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001986537138"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002381510651"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5433277341"))
@@ -32,7 +32,7 @@ SHORTENER_WEBSITE = os.environ.get('SHORTENER_WEBSITE', 'tnshort.net')
 SHORTENER_API = os.environ.get('SHORTENER_API', 'a99608641893c27e95a317a55d13112c9833cae7')
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://karthickjk:karthick@cluster0.vcjskkq.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "manii")
+DB_NAME = os.environ.get("DATABASE_NAME", "maniii")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
