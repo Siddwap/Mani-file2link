@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: file2link
+    plan: free
+    env: docker
+    dockerfilePath: Dockerfile
+    repo: https://github.com/Siddwap/Mani-file2link
+    branch: master
+    autoDeploy: false
+    envVars:
+      - key: TG_BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_NAME
+        sync: false
+      - key: CHANNEL_ID
+        sync: false
+      - key: PORT
+        value: 8000  # Default port value, update if needed
