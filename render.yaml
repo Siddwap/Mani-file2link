@@ -20,5 +20,7 @@ services:
         sync: false
       - key: CHANNEL_ID
         sync: false
+      - key: OWNER_ID
+        sync: false
       - key: PORT
         value: 8000  # Default port value, update if needed
