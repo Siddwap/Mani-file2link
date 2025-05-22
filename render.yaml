@@ -5,7 +5,7 @@ services:
     env: docker
     dockerfilePath: Dockerfile
     repo: https://github.com/Siddwap/Mani-file2link
-    branch: master
+    branch: main
     autoDeploy: false
     envVars:
       - key: TG_BOT_TOKEN
